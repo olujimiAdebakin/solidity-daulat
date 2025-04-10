@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/whileloop.sol": "Name"
+			"contracts/constructor.sol": "Name"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/whileloop.sol": {
-			"keccak256": "0xe856b35cd7cc4ba52e21b1d889a65e35500b2c2c0a26bb106a75068b0fd00f63",
+		"contracts/constructor.sol": {
+			"keccak256": "0x5e2107311e2df2ae3580866c8d54d5874e78b52fc5cc6d693ec629edccd65df2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a154015a06fd9c7e5952dae9e2493a2da3515406a1a89d517fe2043a5fb132c1",
-				"dweb:/ipfs/QmQSdLaspZVsiFMZsKbkCn4BaQYCJqUuaeq3iFyHWUsGdv"
+				"bzz-raw://48abc09d9486173f35b740f8f4e1f04978f265d26325574d3886d6d95094af83",
+				"dweb:/ipfs/QmXubetUYVcW4B2MKbckqL42iE4vBm1h8w4kSHboLjN3dT"
 			]
 		}
 	},
