@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Dohwhile",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/dowhileloop.sol": "DowhileLoop"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/dowhileloop.sol": {
+			"keccak256": "0x36720789e28fc528a7698768cb2567e9a1bf5284f0b45b42f5d76c9c9b68d03b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f6021b948785758bdac7f61a0de16189e32e5ec796a4b74501b5dd5a9c579265",
+				"dweb:/ipfs/QmYCVSypcLb8quz2ZkTi5o8q5pb2cDw5w6A9j9nxMgkJgk"
+			]
+		}
+	},
+	"version": 1
+}
