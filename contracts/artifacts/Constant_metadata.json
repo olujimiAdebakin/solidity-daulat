@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "MY_ADD",
+				"name": "MY_ADDR",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -20,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "myAdd",
+				"name": "getConstant",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -28,7 +28,7 @@
 						"type": "address"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"contracts/Constant.sol": {
-			"keccak256": "0x283bf497e023ebd2de27f0f68b62b5ea07bb58c6d31e6b922a688f27adfcf59d",
+			"keccak256": "0xbab22bef08e37debf207bc4faa04cb6dd6dee96d54dd5129b6b2ed274391cd41",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa19001604b3376e411b81e3a5b0d91df4cf3b727b7535cf21a861c4b040c25e",
-				"dweb:/ipfs/QmT1JUWxxW3tw5zuNzZ6CPESYMRgPMcGTqjgWbFbwKGZfN"
+				"bzz-raw://71fe3d94f4bcdd19bbbbb8cac300c75d89231325a7c2cf011ee67be3c2e34fc5",
+				"dweb:/ipfs/QmQpHPz7pgg294fM6hQtrW4zbADvuaBpbMUD9KQHGQnMfz"
 			]
 		}
 	},
