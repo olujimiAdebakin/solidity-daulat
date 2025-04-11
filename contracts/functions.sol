@@ -31,4 +31,30 @@ function destructuringAssignments() public pure returns (uint, bool, uint, uint,
 
     return (a, b, c, x, w);
 }
+
+// cannot use map for either input or output
+// can use array for input
+
+function arrayInput(uint[] memory _arr) public {}
+ // can use array for output
+uint[] public arr;
+
+function arrayOutput() public view returns (uint[] memory){
+  return arr;
 }
+
+}
+
+  //  call function with key-value inputs
+  contract XYZ {
+    function someFunctionWithManyInputs(uint x, uint y, uint z, address a, bool b, string memory ) public pure returns (uint){
+ }
+      function callFunc() external pure returns(uint) {
+        return someFunctionWithManyInputs(1,2,3,address(0),true,"c");
+      }
+
+      function callFunctWithKeyValue() external pure returns (uint) {
+        return someFunctionWithManyInputs({a: address(0), b:true, c:"C", x:3, y:2, z:3});
+      
+    }
+  }
