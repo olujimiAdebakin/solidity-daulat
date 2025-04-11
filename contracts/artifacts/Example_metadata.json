@@ -7,12 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"inputs": [],
-				"name": "getNAME",
+				"name": "changeName",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -20,12 +15,12 @@
 						"type": "string"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "name",
+				"name": "originalname",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -50,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/shadowing.sol": "C"
+			"contracts/shadowing.sol": "Example"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
