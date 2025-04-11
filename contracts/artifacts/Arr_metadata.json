@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/array.sol": "Name"
+			"contracts/array.sol": "Arr"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"contracts/array.sol": {
-			"keccak256": "0x372b991ea46ea0058f988a98793a2cc1280a8d14f6af7bf46e928fe6903d03e3",
+			"keccak256": "0xc69b05e2aaa41acf9ac7979adf1bd20eda9a80124503f5fed7222fa78e72e15f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cb7ee9c661276f346aa7cb0de8de050b3545f678a95bcec649a95c9711ec2093",
-				"dweb:/ipfs/QmXfwbXMn1x5guZWFDkLJxQdEHcdd34VNeEURhtSJV6ugC"
+				"bzz-raw://898ff6545ab80c901dc83a901592afd6fa883a1d357e5748140b8e172be224da",
+				"dweb:/ipfs/QmbhBLbCYLGMCWmkZEvNMa5LE9D4b1KALTV9TSMQuYJhuB"
 			]
 		}
 	},
