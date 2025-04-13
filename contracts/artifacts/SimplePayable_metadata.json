@@ -98,11 +98,11 @@
 	},
 	"sources": {
 		"contracts/simplepayable.sol": {
-			"keccak256": "0x8d1a64a108f619fdcd12db3c1020e842fa1dc034eea9f234c173405020f93b72",
+			"keccak256": "0x2cf4416ea7597aac2ebfccbf8aa5dcbc6e044c42bb637a6b82a72f0ca025ebf1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://544198e9c82ffa0a993018edc5c4a93fc8e7094f488faa829707c67a57d48e2c",
-				"dweb:/ipfs/QmfPfRYmGJ5ui8ELmMc6uMADKXjwYWWzdJha82cWD6F7jv"
+				"bzz-raw://66cef68954fc401aa091376d9ae3a57f7ad59082eae9a9360ff9fb99d3cca893",
+				"dweb:/ipfs/QmZVcJY3c1mFh1xC8KunEuw3kkiSoemnKZTCwcLV8LRNQK"
 			]
 		}
 	},

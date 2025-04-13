@@ -84,7 +84,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/visibility.sol": "Base"
+			"contracts/visibility.sol": "Child"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},

@@ -10,7 +10,7 @@ contract SimplePayable {
         owner = msg.sender;
     }
 
-    //  Modifier to restrict to owner only
+    //  Modifier to restrict as a guard to check if the truly the owner is the one who is trying to initiate tx
     modifier onlyOwner() {
         require(msg.sender == owner, "You Are Not the contract owner");
         _;
