@@ -1,0 +1,72 @@
+{
+	"id": "db41d5f61b3093dbcf9757c504d524e4",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/call.sol": {
+				"content": "\r\n// // SPDX-License-Identifier: MIT\r\n// pragma solidity ^0.8.18;\r\n\r\n// contract Reciever {\r\n//     event Received(address caller, uint amount, string message);\r\n\r\n//     fallback() external payable {\r\n//         emit Received(msg.sender, msg.value, \"Fallback was called\");\r\n//     }\r\n\r\n//     function foo(string memory _message, uint _x) public payable returns (uint) {\r\n//         emit Received(msg.sender, msg.value,  _message);\r\n\r\n//         return _x + 1;\r\n//     }\r\n// }\r\n\r\n// contract Caller {\r\n//     event Response(bool success, bytes data);\r\n\r\n//     // lets imagine that contract caller does not have the source code for the contract Reciever, but we do know the address of contract Reciever and the function call.\r\n\r\n//     function testCallerFoo(address payable _addr) public payable {\r\n//         // you can send ether and specify a custom gas aount\r\n//       (bool success, bytes memory data) = _addr.call{value: msg.value, gas: 5000}(\r\n//     abi.encodeWithSignature(\"foo(string,uint256)\", \"call foo\", 123)\r\n// );\r\n\r\n\r\n//         emit Response(success, data);\r\n//     }\r\n\r\n//     // calling a function that does not exist triggers the fallback function\r\n//     function testCallDoesNotExist(address payable _addr) public payable {\r\n//        (bool success, bytes memory data) = _addr.call{value: msg.value}(abi.encodePacked(\"doesNotExist()\"));\r\n\r\n//         emit Response(success, data);\r\n//     }\r\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"\n--> contracts/call.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.26;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/call.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/call.sol": {
+				"ast": {
+					"absolutePath": "contracts/call.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "1420:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

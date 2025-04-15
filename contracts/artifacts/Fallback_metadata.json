@@ -6,47 +6,31 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "num",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sender",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "func",
+						"type": "string"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "gas",
 						"type": "uint256"
 					}
 				],
-				"name": "setVars",
-				"outputs": [],
+				"name": "Log",
+				"type": "event"
+			},
+			{
 				"stateMutability": "payable",
-				"type": "function"
+				"type": "fallback"
 			},
 			{
 				"inputs": [],
-				"name": "value",
+				"name": "getBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -56,6 +40,10 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -71,7 +59,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/delegateCall.sol": "B"
+			"contracts/fallback.sol": "Fallback"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -85,12 +73,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/delegateCall.sol": {
-			"keccak256": "0x0f1673626d6701b370ae3caf785a292cf48a42b379bde602292421564e71cca6",
+		"contracts/fallback.sol": {
+			"keccak256": "0x92939bda08bfa3c94196affd0a703f95300f936687b8951c3ce889df0b09d1af",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://513dee44c0d5684dc74e309c4157ae7815124ffc2502ed462845a9eab0551f7f",
-				"dweb:/ipfs/QmPTtTHaWKvMDqaJ4rfhNSTFp9KxgC9oXPi5tRj3jtdLYK"
+				"bzz-raw://2aea9340928766ecab37cfcd19fe8242355b74df3b2599cd6ee6ff08a9b65c3b",
+				"dweb:/ipfs/QmRVH3o9pyWtZghM8eUnwsXfFJGkyKYom4cEKiMjdEAFaK"
 			]
 		}
 	},

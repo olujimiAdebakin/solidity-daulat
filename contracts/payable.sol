@@ -1,44 +1,33 @@
-
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
 
 contract Payable {
-    // payable address can recieve ETHER
+    // Payable address can receive ETH
     address payable public owner;
 
-    // payable constructor can recieve Ether
+    // Constructor is payable, can receive ETH at deployment
     constructor() payable {
         owner = payable(msg.sender);
-    
     }
 
-    // function to deposit Ether into this contract
-    // call this function along with some Ether.
-    // The balance of this contract will be automatically updated
-
+    // Function to deposit Ether into this contract
     function deposit() public payable {}
 
-    // call this function along with some Ether.
-    // The function throw an error since this function is not payable
-    function nonpayable () public {}
+    // This will throw error if someone tries to send ETH to it
+    function nonpayable() public {}
 
-    // function to withdraw all ether frm this contract
-    function withdraw () view public {
-        // get the amount of Ether stored in this contract
+    // ✅ Fixed: Withdraw all ETH from contract to owner
+    function withdraw() public {
         uint amount = address(this).balance;
 
-        // send all ether to owner
-        // owner can recieve ether since the address of owner is payable
-        (bool success,) = owner.call{value: amount};
-        require(success, "failed to send ether");
+        // ✅ send all Ether to the owner
+        (bool success, ) = owner.call{value: amount}("");
+        require(success, "Failed to send Ether");
     }
 
-    // function to transfer Ether from this contract to address from input
-
+    // Transfer specific ETH amount to any payable address
     function transfer(address payable _to, uint _amount) public {
-        // Note that "to" is declared as payable
-        (bool success,) = _to.call{value: _amount};
-        require(success, "failed to send Ether");
+        (bool success, ) = _to.call{value: _amount}("");
+        require(success, "Failed to send Ether");
     }
-
 }

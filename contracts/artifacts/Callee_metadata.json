@@ -1,13 +1,19 @@
 {
 	"compiler": {
-		"version": "0.8.26+commit.8a97fa7a"
+		"version": "0.8.29+commit.ab55807c"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "num",
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_x",
+						"type": "uint256"
+					}
+				],
+				"name": "setX",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,38 +21,49 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "sender",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_num",
+						"name": "_x",
 						"type": "uint256"
 					}
 				],
-				"name": "setVars",
-				"outputs": [],
+				"name": "setXandSendEther",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
 				"name": "value",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "x",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -71,7 +88,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/delegateCall.sol": "B"
+			"contracts/callContract.sol": "Callee"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -85,12 +102,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/delegateCall.sol": {
-			"keccak256": "0x0f1673626d6701b370ae3caf785a292cf48a42b379bde602292421564e71cca6",
+		"contracts/callContract.sol": {
+			"keccak256": "0xb2b3fdf121d43be1735c6cc0af23ab3c894c15d80dafaf590203a47fdacfa45c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://513dee44c0d5684dc74e309c4157ae7815124ffc2502ed462845a9eab0551f7f",
-				"dweb:/ipfs/QmPTtTHaWKvMDqaJ4rfhNSTFp9KxgC9oXPi5tRj3jtdLYK"
+				"bzz-raw://63061b7f09bdbb9b9150d7daf9e043bd820736e040ceaf1420cd6ef9851fef3c",
+				"dweb:/ipfs/QmZLTNtUqqWvU14dn1YTjCahYqw26He4ENL4bn5JBESE74"
 			]
 		}
 	},
